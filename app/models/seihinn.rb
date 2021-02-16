@@ -1,0 +1,2 @@
+class Seihinn < ApplicationRecord
+end

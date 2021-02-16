@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @seihinn.name %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @seihinn.price %>
+</p>
+
+<p>
+  <strong>Vendor:</strong>
+  <%= @seihinn.vendor %>
+</p>
+
+<%= link_to 'Edit', edit_seihinn_path(@seihinn) %> |
+<%= link_to 'Back', seihinns_path %>

@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Seihinns</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Vendor</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @seihinns.each do |seihinn| %>
+      <tr>
+        <td><%= seihinn.name %></td>
+        <td><%= seihinn.price %></td>
+        <td><%= seihinn.vendor %></td>
+        <td><%= link_to 'Show', seihinn %></td>
+        <td><%= link_to 'Edit', edit_seihinn_path(seihinn) %></td>
+        <td><%= link_to 'Destroy', seihinn, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Seihinn', new_seihinn_path %>
